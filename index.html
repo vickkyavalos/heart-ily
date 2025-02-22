@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <title>heart</title>
+    <style>
+        .bg_heart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .floating-heart {
+            position: absolute;
+            color: red;
+            font-size: 2rem;
+            animation: float 4s linear infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+            100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-plugin"></div>
+    <div class="bg_heart"></div>
+
+    <div class="div">
+        <a id="boton">
+            <div class="heart"></div>
+        </a>
+    </div>
+    <br>
+    <div class="textoP">
+        <p id="texto">Te quiero mucho mucho</p>
+        <button id="recargar">Restart</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
