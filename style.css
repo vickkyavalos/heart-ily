@@ -65,15 +65,52 @@ p {
    font-size: 3rem;
    color: #fff;
    text-align: center;
-   margin-top: 20px;
+   margin-top: 50px;
    font-family: 'Mynerve', serif;
 }
 
- 
-#texto {
-    display: none;
-    margin-top: 50px;
-    color: white;
-    text-align: center;
+.textoP {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
+#recargar {
+   display: none;
+   margin-top: 50px;
+   color: white;
+   text-align: center;
+   background-color: #f20044;
+   border: none;
+   padding: 10px 20px;
+   font-size: 1rem;
+   cursor: pointer;
+   border-radius: 25px;
+   justify-content: center;
+}
+/****************************************************************************************/
+@media (max-width: 600px) {
+    .heart {
+        height: 70px; 
+        width: 70px;  
+    }
+
+    .heart::before, .heart::after {
+        height: 70px;
+        width: 70px; 
+        border-radius: 35px; 
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    #texto {
+        margin-top: 20px; 
+    }
+
+    #recargar {
+        margin-top: 10px; 
+    }
+}
